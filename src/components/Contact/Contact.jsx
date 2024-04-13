@@ -1,11 +1,21 @@
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+import css from "../Contact/Contact.module.css";
+
 export default function Contact({ id, name, number }) {
   return (
-    <div>
-      <li key={id}>
-        <p>Name: {name}</p>
-        <p>Number:{number}</p>
+    <div className={css.container}>
+      <li className={css.item} key={id}>
+        <p className={css.data}>
+          <FaUser />
+          {name}
+        </p>
+        <p className={css.data}>
+          <FaPhoneAlt />
+          {number}
+        </p>
       </li>
-      <button>Delete</button>
+      <button className={css.btn}>Delete</button>
     </div>
   );
 }
