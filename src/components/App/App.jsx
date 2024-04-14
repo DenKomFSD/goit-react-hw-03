@@ -1,5 +1,5 @@
 import "./App.css";
-// import ContactForm from "../ContactForm/ContactForm";
+import ContactForm from "../ContactForm/ContactForm";
 import SearchBox from "../SearchBox/SearchBox";
 import ContactList from "../ContactList/ContactList";
 import { useState } from "react";
@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <h1>Phonebook</h1>
-      {/* <ContactForm /> */}
+      <ContactForm />
       <SearchBox value={filter} onChange={setFilter} />
       <ContactList contacts={filteredContacts} />
     </>
