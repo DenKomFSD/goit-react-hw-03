@@ -25,6 +25,7 @@
   border-radius: 4px;
   margin-bottom: 16px;
   color: black;
+  margin-bottom: 4px;
 }
 .btn {
   background-color: #d7d7d7;
@@ -35,4 +36,9 @@
   max-height: 40px;
   max-width: 150px;
   align-self: center;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
 }
